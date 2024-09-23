@@ -100,8 +100,8 @@ function App() {
               {!isYear && <span className="text-danger">*invalid input</span>}
             </div>
             <div className="mb-3 d-flex justify-content-between">
-              <Button variant="contained" onClick={handleCalculate} disabled={isPrinciple && isRate && isYear ? false:true}>Calculate</Button>
-              <Button variant="outlined" onClick={handleReset}>Reset</Button>
+              <Button onClick={handleCalculate} style={{width:"220px", height:"60px"}} variant="contained" color="success" disabled={isPrinciple && isRate && isYear ?false :true} >Calculate</Button>
+              <Button style={{width:"220px", height:"60px"}} variant="outlined">Reset</Button>
             </div>
           </div>
         </div>
